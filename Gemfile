@@ -31,15 +31,19 @@ group :doc do
   gem 'sdoc', require: false
 end
 gem 'therubyracer',  '~> 0.12.0'
+gem 'devise',        '~> 3.2.2'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+group :test do
+  gem 'cucumber-rails', '1.3.0', :require => false # Cucumber for Rails :)
+  gem 'capybara', '2.1.0'
+  gem 'database_cleaner', '~> 0.9.1' # A set of strategies for cleaning your database in Ruby.
+  gem 'factory_girl_rails', '~> 4.2.0', :group => [ :development ] # Fixtures replacement.
+  gem 'mongoid-rspec', '~> 1.6.0' # RSpec matchers for Mongoid 3.x.
+  gem 'rspec-rails', '~> 2.12.2', :group => [ :development ] # RSpec for Rails :)
+  gem 'simplecov', '~> 0.7.1', :require => false # Code coverage for Ruby 1.9.
+  gem "email_spec", '~> 1.4.0' # Check emails
+  gem 'forgery', '~> 0.5.0', :group => [ :development ] # Fake data
+  gem 'wait_for'
+  gem 'poltergeist', '~> 1.4.1'
+  gem 'selenium-webdriver', '2.35.1'
+end
