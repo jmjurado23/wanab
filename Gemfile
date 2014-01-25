@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails',   '4.0.2'
 gem 'mongoid', '~> 4.0.0.alpha2', github: 'mongoid/mongoid'
 gem 'bson_ext'
+gem 'haml',    '~> 4.0.5'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -32,6 +33,7 @@ group :doc do
 end
 gem 'therubyracer',  '~> 0.12.0'
 gem 'devise',        '~> 3.2.2'
+gem 'acts_as_api',   '~> 0.4.1' # Creating XML/JSON responses.
 
 group :test do
   gem 'cucumber-rails', '1.3.0', :require => false # Cucumber for Rails :)

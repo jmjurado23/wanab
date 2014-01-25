@@ -1,0 +1,7 @@
+Hello Wolrd!!!!
+
+= current_user.inspect
+- if current_user.webs and current_user
+  = current_user.webs.count
+
+= link_to "Sign out", destroy_user_session_path, :method => :delete
