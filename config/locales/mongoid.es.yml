@@ -1,0 +1,6 @@
+es:
+  models:
+    user:
+      email: 'Email'
+      password: 'Contraseña'
+

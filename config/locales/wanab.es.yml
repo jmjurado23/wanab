@@ -1,0 +1,14 @@
+es:
+  wanab:
+    registration:
+      sign_in_title: 'Entra y crea tu web'
+      sign_in: 'Entrar'
+      remember_me: 'Recordar sesión'
+      register: 'Registrarse'
+      forgot_pass: '¿Olvidaste la contraseña?'
+      receiver_confirmation: '¿No reciviste el correo de confirmación?'
+      placeholder_email: 'Introduzce el email'
+      placeholder_password: 'Introduzca su contraseña'
+    home:
+      title: 'Wanab'
+      subtitle: 'Crea tu web en unos segundos'
