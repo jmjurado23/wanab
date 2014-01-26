@@ -23,13 +23,14 @@
               =t 'wanab.home.title'
             %h3
               =t 'wanab.home.subtitle'
-        .col
+        .col#sign_in_form_view
           .col-lg-4
             .row
               %h2
                 =t 'wanab.registration.sign_in_title'
             .row
               = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+                = devise_error_messages!
                 %div
                   = f.email_field :email, :autofocus => true, class: 'form-control',
                     placeholder: I18n.t( 'wanab.registration.placeholder_email' )
@@ -42,13 +43,40 @@
                   %div
                     = f.check_box :remember_me
                     =t 'wanab.registration.remember_me'
-                    %button.btn.btn-primary.pull-right
+                    %a.btn.btn-primary.pull-right#sign_in_button
                       =t 'wanab.registration.sign_in'
-                    %button.btn.btn-primary.pull-right
+                    %a.btn.btn-primary.pull-right#register_button
                       =t 'wanab.registration.register'
             .row
               %br/
               = render "devise/shared/links"
+
+        .col#registration_form_view{ style: 'display:none' }
+          .col-lg-4
+            .row
+              %h2
+                =t 'wanab.registration.register_title'
+            .row
+              = form_for( resource, :as => resource_name, :url => registration_path( resource_name ) ) do |f|
+                = devise_error_messages!
+                %div
+                  = f.email_field :email, :autofocus => true, class: 'form-control',
+                    placeholder: I18n.t( 'wanab.registration.placeholder_email' )
+                %br/
+                %div
+                  = f.password_field :password, class: 'form-control',
+                    placeholder: I18n.t( 'wanab.registration.placeholder_password' )
+                %br/
+                %div
+                  = f.password_field :password_confirmation, class: 'form-control',
+                    placeholder: I18n.t( 'wanab.registration.placeholder_re_password' )
+                %br/
+                %div
+                  %a.btn.btn-primary.pull-right#registration_button
+                    =t 'wanab.actions.confirm'
+                  %a.btn.btn-primary.pull-right#return_button
+                    =t 'wanab.actions.return'
+
 
   .content-section-a
     .container
@@ -62,3 +90,39 @@
             = 'Prueba de texto de sección'
         .col-lg-5.col-lg-offset-2.col-sm-6
           %img.img-responsive{ src: asset_path( 'journey.jpg' ) }
+
+  .content-section-b
+    .container
+      .row
+        .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+          %hr.section-header-spacer
+          .clearfix
+          %h2.section-heading
+            = 'Sección 2'
+          %p.lead
+            = 'Prueba de texto de sección'
+        .col-lg-5.col-sm-pull-6.col-sm-6
+          %img.img-responsive{ src: asset_path( 'journey2.jpg' ) }
+
+  .content-section-a
+    .container
+      .row
+        .col-lg-5.col-sm-6
+          %hr.section-header-spacer
+          .clearfix
+          %h2
+            = 'Sección 3'
+          %p.lead
+            = 'Prueba de texto de sección'
+        .col-lg-5.col-lg-offset-2.col-sm-6
+          %img.img-responsive{ src: asset_path( 'journey3.jpg' ) }
+
+  .banner
+    .container
+      .row
+        .col-lg-6
+          %h2
+            = 'Prueba de banner'
+        .col-lg-6
+
+

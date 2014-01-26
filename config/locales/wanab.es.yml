@@ -1,7 +1,13 @@
 es:
   wanab:
+    actions:
+      return: 'Volver'
+      confirm: 'Confirmar'
+      accept: 'Aceptar'
+      cancel: 'Cancelar'
     registration:
       sign_in_title: 'Entra y crea tu web'
+      register_title: 'Crea tu cuenta'
       sign_in: 'Entrar'
       remember_me: 'Recordar sesión'
       register: 'Registrarse'
@@ -9,6 +15,7 @@ es:
       receiver_confirmation: '¿No reciviste el correo de confirmación?'
       placeholder_email: 'Introduzce el email'
       placeholder_password: 'Introduzca su contraseña'
+      placeholder_re_password: 'Vuelva a introducir su contraseña'
     home:
       title: 'Wanab'
       subtitle: 'Crea tu web en unos segundos'
