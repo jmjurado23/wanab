@@ -23,6 +23,8 @@ es:
       signed_in: 'Iniciaste sesión correctamente.'
       signed_out: 'Cerraste sesión correctamente.'
     passwords:
+      forgot_title: '¿Has olvidado tu contraseña?'
+      forgot_button: 'Envíeme las instrucciones'
       send_instructions: 'Recibirás un email con instrucciones para reiniciar tu contraseña en unos minutos.'
       updated: 'Tu contraseña fue cambiada correctamente. Has iniciado sesión.'
       updated_not_active: 'Tu contraseña fue cambiada correctamente.'
