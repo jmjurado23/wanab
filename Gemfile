@@ -5,6 +5,7 @@ gem 'rails',   '4.0.2'
 gem 'mongoid', '~> 4.0.0.alpha2', github: 'mongoid/mongoid'
 gem 'bson_ext'
 gem 'haml',    '~> 4.0.5'
+gem 'cancancan', '~> 1.8.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
